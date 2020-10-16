@@ -1,0 +1,77 @@
+version: '3'
+services:
+
+  #PHP Service
+  php:
+    build:
+      context: .
+      dockerfile: php.dockerfile
+    image: ${COMPOSE_PROJECT_NAME}-php:7.4.6-fpm
+    container_name: ${COMPOSE_PROJECT_NAME}-php
+    command:
+        - /bin/bash
+        - -c
+        - |
+          chown www-data -R /var/www
+          chmod 775 -R /var/www
+          php-fpm
+    restart: unless-stopped
+    tty: true
+    working_dir: /var/www
+    volumes:
+      - ./src:/var/www
+      - ./conf/php:/usr/local/etc/php/conf.d
+    networks:
+      - app-network
+
+  #Nginx Service
+  nginx:
+    image: nginx:alpine
+    container_name: ${COMPOSE_PROJECT_NAME}-nginx
+    restart: unless-stopped
+    tty: true
+    ports:
+      - ${WEB_PORT}:80
+    volumes:
+      - ./src:/var/www
+      - ./conf/nginx:/etc/nginx/conf.d/
+    networks:
+      - app-network
+
+  #MySQL Service
+  mysql:
+    image: mysql:8.0.19
+    container_name: ${COMPOSE_PROJECT_NAME}-mysql
+    restart: unless-stopped
+    tty: true
+    environment:
+      MYSQL_DATABASE: data
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - mysql-data:/var/lib/mysql/
+    networks:
+      - app-network
+
+  #phpMyAdmin
+  phpMyAdmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: ${COMPOSE_PROJECT_NAME}-phpmyadmin
+    restart: unless-stopped
+    ports:
+      - ${PMA_PORT}:80
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+    networks:
+      - app-network
+    external_links:
+      - mysql:db
+
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge
+
+#Volumes
+volumes:
+  mysql-data:
+    driver: local
