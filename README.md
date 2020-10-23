@@ -1,6 +1,6 @@
 # README
 
-Related link: [https://sang.asia/tips/docker-compose-for-laravel-project/](Docker Compose for Laravel project)
+Related link: [Docker Compose for Laravel project](https://sang.asia/tips/docker-compose-for-laravel-project/)
 
 ## Introduction
 
