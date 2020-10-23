@@ -16,7 +16,7 @@ Open `conf/nginx/app.conf` and change `fastcgi_pass` from:
 fastcgi_pass docker-laravel-php:9000;
 ```
 ```
-fastcgi_param PHP_VALUE 'xdebug.idekey=avalon-lms-php';
+fastcgi_param PHP_VALUE 'xdebug.idekey=docker-laravel-php';
 ```
 
 to:
