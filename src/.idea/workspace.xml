@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a85cd59c-9301-4b80-a278-0c39911b9cc8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../conf/nginx/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../conf/nginx/app.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../conf/php/docker-php-ext-bcmath.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../conf/php/docker-php-ext-bcmath.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../conf/php/docker-php-ext-gd.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../conf/php/docker-php-ext-gd.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../conf/php/docker-php-ext-intl.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../conf/php/docker-php-ext-intl.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../conf/php/docker-php-ext-mysqli.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../conf/php/docker-php-ext-mysqli.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../conf/php/docker-php-ext-opcache.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../conf/php/docker-php-ext-opcache.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../conf/php/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../conf/php/php.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../php.dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../php.dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conf/php/docker-php-ext-xdebug.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../conf/php/docker-php-ext-xdebug.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +21,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="PhpDebugGeneral" xdebug_debug_port="9001" />
+  <component name="PhpDebugGeneral" xdebug_debug_port="9001" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="127.0.0.1" id="55201ad2-ce13-4ca4-9fc5-b93fd7df380b" name="docker-laravel-php" port="90" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/var/www" />
+          <mapping local-root="$PROJECT_DIR$/public" remote-root="/var/www/public" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
   <component name="ProjectId" id="1jGSmJFmMxbWV1mirfKkoc5lo1v" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,6 +45,14 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="docker-laravel-php" session_id="docker-laravel-php">
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-laravel" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="docker-laravel-php" session_id="docker-laravel-php">
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,7 +61,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603429092773</updated>
-      <workItem from="1603429093803" duration="22000" />
+      <workItem from="1603429093803" duration="953000" />
+      <workItem from="1603435810222" duration="723000" />
+      <workItem from="1603436781710" duration="33000" />
+      <workItem from="1603436837450" duration="49000" />
+      <workItem from="1603436909172" duration="162000" />
     </task>
     <servers />
   </component>
@@ -54,9 +73,55 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2107" y="331" width="992" height="737" key="SettingsEditor" timestamp="1603429114503">
+    <state x="2061" y="348" width="1084" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603436812522">
       <screen x="1920" y="312" width="1366" height="768" />
     </state>
-    <state x="2107" y="331" width="992" height="737" key="SettingsEditor/0.27.1920.1053/1920.312.1366.768@1920.312.1366.768" timestamp="1603429114503" />
+    <state x="2061" y="348" width="1084" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053/1920.312.1366.768@1920.312.1366.768" timestamp="1603436812522" />
+    <state width="1324" height="354" key="GridCell.Tab.0.bottom" timestamp="1603436887236">
+      <screen x="1920" y="312" width="1366" height="768" />
+    </state>
+    <state width="1324" height="354" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.312.1366.768@1920.312.1366.768" timestamp="1603436887236" />
+    <state width="1324" height="354" key="GridCell.Tab.0.center" timestamp="1603436887236">
+      <screen x="1920" y="312" width="1366" height="768" />
+    </state>
+    <state width="1324" height="354" key="GridCell.Tab.0.center/0.27.1920.1053/1920.312.1366.768@1920.312.1366.768" timestamp="1603436887236" />
+    <state width="1324" height="354" key="GridCell.Tab.0.left" timestamp="1603436887236">
+      <screen x="1920" y="312" width="1366" height="768" />
+    </state>
+    <state width="1324" height="354" key="GridCell.Tab.0.left/0.27.1920.1053/1920.312.1366.768@1920.312.1366.768" timestamp="1603436887236" />
+    <state width="1324" height="354" key="GridCell.Tab.0.right" timestamp="1603436887236">
+      <screen x="1920" y="312" width="1366" height="768" />
+    </state>
+    <state width="1324" height="354" key="GridCell.Tab.0.right/0.27.1920.1053/1920.312.1366.768@1920.312.1366.768" timestamp="1603436887236" />
+    <state width="1324" height="354" key="GridCell.Tab.1.bottom" timestamp="1603436887237">
+      <screen x="1920" y="312" width="1366" height="768" />
+    </state>
+    <state width="1324" height="354" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.312.1366.768@1920.312.1366.768" timestamp="1603436887237" />
+    <state width="1324" height="354" key="GridCell.Tab.1.center" timestamp="1603436887236">
+      <screen x="1920" y="312" width="1366" height="768" />
+    </state>
+    <state width="1324" height="354" key="GridCell.Tab.1.center/0.27.1920.1053/1920.312.1366.768@1920.312.1366.768" timestamp="1603436887236" />
+    <state width="1324" height="354" key="GridCell.Tab.1.left" timestamp="1603436887236">
+      <screen x="1920" y="312" width="1366" height="768" />
+    </state>
+    <state width="1324" height="354" key="GridCell.Tab.1.left/0.27.1920.1053/1920.312.1366.768@1920.312.1366.768" timestamp="1603436887236" />
+    <state width="1324" height="354" key="GridCell.Tab.1.right" timestamp="1603436887236">
+      <screen x="1920" y="312" width="1366" height="768" />
+    </state>
+    <state width="1324" height="354" key="GridCell.Tab.1.right/0.27.1920.1053/1920.312.1366.768@1920.312.1366.768" timestamp="1603436887236" />
+    <state x="2107" y="331" width="992" height="737" key="SettingsEditor" timestamp="1603437070926">
+      <screen x="1920" y="312" width="1366" height="768" />
+    </state>
+    <state x="2107" y="331" width="992" height="737" key="SettingsEditor/0.27.1920.1053/1920.312.1366.768@1920.312.1366.768" timestamp="1603437070926" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/public/index.php</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
