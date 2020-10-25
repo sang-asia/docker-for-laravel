@@ -9,7 +9,7 @@ services:
     image: ${COMPOSE_PROJECT_NAME}-php:7.4.6-fpm
     # Remember to open conf/nginx/app.conf to change fastcgi_pass to this container_name
     container_name: ${COMPOSE_PROJECT_NAME}-php
-    command: sh -c "chown www-data -R /var/www && chmod 775 -R /var/www && php-fpm"
+    command: sh -c "chown user -R /var/www && chmod 775 -R /var/www && php-fpm"
     restart: unless-stopped
     tty: true
     working_dir: /var/www
