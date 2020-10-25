@@ -16,6 +16,7 @@ services:
     volumes:
       - ./src:/var/www
       - ./conf/php:/usr/local/etc/php/conf.d
+      - ./conf/php-fpm.d:/usr/local/etc/php-fpm.d
     networks:
       - app-network
 
