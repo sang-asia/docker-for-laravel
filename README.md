@@ -4,7 +4,7 @@ Related link: [Docker Compose for Laravel project](https://sang.asia/tips/docker
 
 ## Introduction
 
-Docker environment for Laravel project: `nginx:alpine`, `php:7.4.6-fpm`, `mysql:8.0.19`, `phpmyadmin/phpmyadmin:latest`.
+Docker environment for Laravel project: `nginx:alpine`, `php:8.1-fpm`, `mysql:8.0`, `phpmyadmin/phpmyadmin:latest`.
 
 Installed PHP extensions: `pdo_mysql`, `intl`, `opcache`, `gd`, `bcmath`, `mysqli`, `xdebug`.
 
